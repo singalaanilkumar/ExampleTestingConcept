@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.epam.reportportal</groupId>
+    <artifactId>examples-java</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.encoding>${project.build.sourceEncoding}</maven.compiler.encoding>
+        <maven.resources.encoding>${project.build.sourceEncoding}</maven.resources.encoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+    </properties>
+
+    <modules>
+        <module>example-cucumber</module>
+        <module>example-cucumber2</module>
+        <module>example-cucumber4</module>
+        <module>example-cucumber6</module>
+        <module>example-cucumber6-testng</module>
+        <module>example-jbehave</module>
+        <module>example-testng-logback</module>
+        <module>example-testng-log4j</module>
+        <module>example-junit5</module>
+        <module>example-junit</module>
+        <module>example-testng-fork-execution</module>
+        <module>example-spock</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.10.1</version>
+        </dependency>
+    </dependencies>
+</project>
